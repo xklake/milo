@@ -13,7 +13,7 @@
         <h2><?=$catalog->surname?></h2>
     </div><!-- headline -->
 
-    <div>
+    <div id="realcontent">
         <?= $catalog->content ?>
     </div>
     <br/>
