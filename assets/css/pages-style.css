@@ -449,10 +449,10 @@
 				transition: all 0.3s;
 	}
 	
-	a.search-button:before {
+	/*a.search-button:before {
 		font-family: "miu-icon-font";
 		content: "";
-	}
+	}*/
 	
 	a.search-button.open:after {
 		position: absolute;
@@ -469,8 +469,9 @@
 	
 	a.search-button.open,
 	a.search-button:hover {
-		background-color: #bca480;
+		/*background-color: #bca480;
 		color: #fff;
+                */
 	}
 	
 	#search-container {
@@ -1613,7 +1614,7 @@
 		}
 		
 		a.search-button {
-			top: 50px;
+			top: 47px;
 			right: 75px;
 		}
 		
@@ -1709,3 +1710,5 @@
 		}
 		
 	}
+        
+  

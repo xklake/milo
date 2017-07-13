@@ -5,6 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+Yii::$app->params['currentCatalog'] = $catalog;
 ?>
 
 <div class="col-sm-6">

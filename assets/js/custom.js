@@ -72,7 +72,7 @@
 	
 	
 	// SEARCH //
-	function search_form() {	
+	/*function search_form() {	
 		
 		$(".search-button").on("click", function(e) { 
 		
@@ -93,7 +93,7 @@
 			
 		});
 		
-	}
+	}*/
 	
 	
 	// STICKY //
@@ -478,7 +478,7 @@
 		
 		
 		// SEARCH //
-		search_form();
+		//search_form();
 	
 		
 		// FANCYBOX //

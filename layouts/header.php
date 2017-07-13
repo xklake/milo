@@ -13,9 +13,11 @@
                         
                     </div><!-- col -->
                     <div class="col-sm-10">
+                        <a class='search-button' href="http://en.ifs-tax.com">
+                            <img src="/images/cn.png" style='vertical-align: middle;'/>
+                        </a>                        
                         <!-- MENU --> 
                         <nav>
-                        
                             <a id="mobile-menu-button" href="#"><i class="fa fa-bars"></i></a>
                                              
                             <ul class="menu clearfix" id="menu">

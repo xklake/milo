@@ -40,8 +40,15 @@
                         </div><!-- col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb">
-                                <li><a href="#">Home</a></li>
-                                <li class="active">Services</li>
+                                <li><a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">Home</a></li>
+                                <li class="active">
+                                    <?php 
+                                        $currCatalog = Yii::$app->params['currentCatalog']; 
+                                        if($currCatalog != null){
+                                            echo($currCatalog->surname);
+                                        }
+                                    ?>
+                                </li>
                             </ol>
                         </div><!-- col -->
                     </div><!-- row -->
