@@ -7,22 +7,21 @@
  */
 ?>
 
-<section id="inner-headline">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="pageTitle"><?=$catalog->surname?></h2>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="col-sm-6">
+    <div class="headline style-1">
+        <h4>IFS Services</h4>
+        <h2><?=$catalog->surname?></h2>
+    </div><!-- headline -->
 
-<section id="content">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <?= $catalog->content?>
-            </div>
-        </div>
+    <div>
+        <?= $catalog->content ?>
     </div>
-</section>
+    <br/>
+    <a class="btn btn-default" href="<?= Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=> 60])?>">Free Quotation</a>
+</div><!-- col -->
+
+<div class="col-sm-6">
+    <p class="text-center wow pulse animated" style="visibility: visible; animation-name: pulse;">
+        <img src="/images/services/image-1.png" alt="">
+    </p>
+</div><!-- col -->
