@@ -7,14 +7,14 @@
  */
 ?>
 
-<section id="error" class="container text-center" style="margin: 200px 0px;">
+<section id="error" class="container text-center">
     <div class="container">
-        <div class="row">
-            <h1>SOMETHING IS WRONG !!</h1>
+        <div class="row" style="margin-top:100px; margin-bottom:100px;">
+            <h1>ERROR</h1>
             <p>The page does not exist, please check your url or contact the website owner.</p>
 
-            <span class="btn btn-success">
-                Back To <a  href="<?= Yii::$app->urlManager->getHostInfo() . Yii::$app->homeUrl ?>" style="margin-top: 20px;">Home Page</a>
+            <span class="btn btn-danger">
+                <span class="text-success">Back To</span> <a  href="<?= Yii::$app->urlManager->getHostInfo() . Yii::$app->homeUrl ?>" style="margin-top: 20px;">IFS Home Page</a>
             <span>
         </div>
     </div>
