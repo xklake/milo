@@ -23,6 +23,6 @@ Yii::$app->params['currentCatalog'] = $catalog;
 
 <div class="col-sm-6">
     <p class="text-center wow pulse animated" style="visibility: visible; animation-name: pulse;">
-        <img src="/images/services/image-1.png" alt="">
+        <img src="<?='/'.$catalog->banner?>" alt="">
     </p>
 </div><!-- col -->

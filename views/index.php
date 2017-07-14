@@ -199,13 +199,13 @@
                 </div><!-- col -->
                 
                 <?php 
-                    $images = Yii::$app->getImageByGroup('qualification');
+                    $images = Yii::$app->getImageByGroup('qualification-big');
                     foreach ($images as $img) {
                 ?>
                     <div class="col-sm-3">
                         <div class="counter">
                             <div>
-                                <img src="<?='/'.$img->image?>">
+                                <img src="<?='/'.$img->image?>" style='border:2px solid #000;'>
                             </div>
                             <div class="counter-details">
                                 <p><?= strtoupper($img->name)?></p>

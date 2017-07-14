@@ -30,6 +30,15 @@
                                         }
                                     ?>                                
                                 </p>
+                                <p>
+                                    <span style="color:#bca480;">WE'RE MEMBER OF</span>
+                                    <?php
+                                        $images = Yii::$app->getImageByGroup('qualification');
+                                        foreach ($images as $img) {
+                                    ?>
+                                        <img src="<?='/'.$img->image?>">
+                                    <?php } ?>
+                                </p>
                                 
                             </div><!-- widget-text -->
                             
