@@ -741,7 +741,7 @@
 		
 		
 		// GOOGLE MAPS //
-		$(".map").gMap({
+		/*$(".map").gMap({
 			maptype: 'ROADMAP',
 			scrollwheel: false,
 			zoom: 11,
@@ -757,7 +757,7 @@
 				streetViewControl: false,
 				overviewMapControl: false
 			}
-		});
+		});*/
 		
 		
 		// ISOTOPE //

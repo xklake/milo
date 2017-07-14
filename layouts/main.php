@@ -30,7 +30,7 @@
     <?php $this->head() ?>
 </head><!--/head-->
 
-<body id="fullscreen" class="sticky-header">
+<body class="sticky-header">
     <div id="page-wrapper">
         <?php $this->beginBody() ?>
         <?= $this->render('header.php') ?>
