@@ -25,7 +25,8 @@
                                     <a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">Home</a>  
                                 </li>
                                 
-                                <?php foreach(Yii::$app->params['mainMenu'] as $item) {
+                                <?php 
+                                    foreach(Yii::$app->params['mainMenu'] as $item) {
                                     $sons = \funson86\blog\models\BlogCatalog::find()->where(['parent_id' =>$item['id']])->andWhere(['status'=> \funson86\blog\models\Status::STATUS_ACTIVE])->all();
                                     if(count($sons) == 0){
                                 ?>
@@ -36,7 +37,7 @@
                                         </li>
                                     <?php } else { ?>
                                         <li class="dropdown">
-                                           <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id' => $item['id']])?>"><?=$item['surname']?></a>
+                                           <a href="#"><?=$item['surname']?></a>
                                            <ul>
                                                <?php                                       
                                                     foreach ($sons as $subcata){ 
