@@ -6,7 +6,7 @@
                         
                         <!-- LOGO -->
                         <div id="logo">
-							<a href="index-slider.html">
+							<a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">
 								<img src="<?=Yii::$app->urlManager->getHostInfo().'/'.Yii::$app->getImages('logo')->image?>" alt="">
 							</a>
 						</div><!-- logo -->

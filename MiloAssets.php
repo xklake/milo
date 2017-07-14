@@ -44,7 +44,6 @@ class MiloAssets extends AssetBundle
         'js/placeholders/jquery.placeholder.min.js',
         'js/validate/jquery.validate.min.js',
         'js/submit/jquery.form.min.js', 
-        'js/googlemaps/jquery.gmap.min.js', 
         'js/counter/jQuerySimpleCounter.js', 
         'js/charts/chart.min.js', 
         'js/charts/jquery.easypiechart.min.js',

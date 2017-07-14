@@ -17,7 +17,7 @@
 
                         <div class="col-sm-6">
                             <ol class="breadcrumb">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">Home</a></li>
                                 <li class="active">Contact</li>
                             </ol>
                         </div><!-- col -->
