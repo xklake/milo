@@ -31,19 +31,17 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-
                 <div class="headline style-3">
                     <h2>Services</h2>
-                    <h5>
-                        <?php 
-                            $subtitle = Yii::$app->getTextBlock('home-service-subtitle');
-                            if($subtitle){
-                                echo($subtitle->content);
-                            }
-                        ?>
-                    </h5>
+                    
+                    <?php 
+                        $subtitle = Yii::$app->getTextBlock('home-service-subtitle');
+                        if($subtitle){ ?>
+                        <h5>
+                            <?=$subtitle->content?>
+                        </h5>
+                    <?php } ?>
                 </div><!-- headline -->
-
             </div><!-- col -->
         </div><!-- row -->
     </div><!-- ontainer -->
@@ -57,7 +55,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="single-service.html">Accounting, Tax & trust Solutions </a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>53])?>">ACCOUNTING AND TAX SOLUTIONS</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -82,7 +80,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="single-service.html">Company Secretarial Services</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>54])?>">Company Secretarial Services</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -105,7 +103,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="single-service.html">Business Start-up & Development</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>55])?>">Business Start-up and Development</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -127,7 +125,7 @@
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
                         <h3>
-                            <a href="single-service.html">Personal & Business Tax</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>56])?>">Personal & Business Tax</a>
                             <small>---------------------</small>
                         </h3>
                         <p>
@@ -147,7 +145,7 @@
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
                         <h3>
-                            <a href="single-service.html">Property Tax</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>57])?>">Property Tax</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -169,7 +167,7 @@
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
                         <h3>
-                            <a href="single-service.html">Inheritance Tax</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>58])?>">Inheritance Tax</a>
                             <small>---------------------</small>
                         </h3>
                         <p>
