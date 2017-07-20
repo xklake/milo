@@ -51,15 +51,12 @@
                     <?php 
                         $websiteTitle = Yii::$app->getTextBlock('home-site');
                         if($websiteTitle != null)
-                        { ?>
-                        <div class="col-sm-12" style="margin-bottom: 0px;margin-left:3px;color:#c9bfbf;">
+                        { 
+                    ?>
+                        <div class="col-sm-12" style="margin-bottom: 29px;margin-left:3px;color:#c9bfbf;">
                             <?=$websiteTitle->content?>
                         </div>
-                        <?php } ?>
-                    ?>                            
-                    
-
-
+                    <?php } ?>
                 </div><!-- row -->
 
             </div><!-- container -->    
