@@ -24,7 +24,7 @@
                                 
                                 <?php 
                                     foreach(Yii::$app->params['mainMenu'] as $item) {
-                                    $sons = \funson86\blog\models\BlogCatalog::find()->where(['parent_id' =>$item['id']])->andWhere(['status'=> \funson86\blog\models\Status::STATUS_ACTIVE])->all();
+                                    $sons = \funson86\blog\models\BlogCatalog::find()->where(['parent_id' =>$item['id']])->andWhere(['status'=> \funson86\blog\models\Status::STATUS_ACTIVE])->orderBy(['sort_order'=>SORT_ASC])->all();
                                     if(count($sons) == 0){
                                 ?>
                                         <li>
