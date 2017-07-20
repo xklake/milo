@@ -125,7 +125,7 @@
                         	
                             <div class="widget widget-text">	
                             	
-                                <p class="last text-center text-uppercase">&copy; All Rights Reserved,2017, <span class="text-primary">IFS-TAX.COM</span> 
+                                <p class="last text-center">Copyright ©internationalfinancialsolution– All rights reserved</p>
                                 <div class="text-lowercase text-center" style='font-size:1rem;'> Powered By 
                                     <a href="http://chinasoftware.co.uk" target="_blank" ref='nofollow external'>chinasoftware</a>
                                 </div>
