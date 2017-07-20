@@ -37,7 +37,6 @@
         <?= $content ?>
         <?= $this->render('footer.php') ?>
         <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <?php $this->endBody() ?>
     </div>
 </body>
