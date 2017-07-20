@@ -69,6 +69,7 @@
  	
 	header {
 		position: relative;
+                background: #2b2e31;
 	}
 	
 	#fullscreen header {
@@ -133,7 +134,7 @@
 		display: block;
 		font-size: 14px;
 		font-weight: 600;
-		color: #3b3e43;
+		color: #c9bfbf;
 	}
 	
 	.menu > li > a {
@@ -165,11 +166,12 @@
 		padding: 25px 0;
 		border: 1px solid #d7d7d7;
 		border-top: 2px solid #bca480;
-		background-color: #fff;
+		background-color: #2b2e31;
 	}
 	
 	.menu li.dropdown ul li a {
 		padding: 10px 25px;
+                color:#c9bfbf;
 	}
 	
 	.menu li.dropdown ul li a:before {
