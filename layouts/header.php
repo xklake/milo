@@ -1,16 +1,13 @@
         <header id="header">
-            
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2">
-                        
                         <!-- LOGO -->
                         <div id="logo">
 							<a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">
 								<img src="<?=Yii::$app->urlManager->getHostInfo().'/'.Yii::$app->getImages('logo')->image?>" alt="">
 							</a>
 						</div><!-- logo -->
-                        
                     </div><!-- col -->
                     <div class="col-sm-10">
                         <a class='search-button' href="http://en.ifs-tax.com">
@@ -51,7 +48,20 @@
                             </ul>
                     	</nav>
                     </div><!-- col -->
+                    <?php 
+                        $websiteTitle = Yii::$app->getTextBlock('home-site');
+                        if($websiteTitle != null)
+                        { ?>
+                        <div class="col-sm-12" style="margin-bottom: 0px;margin-left:3px;color:#fff;">
+                            <?=$websiteTitle->content?>
+                        </div>
+                        <?php } ?>
+                    ?>                            
+                    
+
+
                 </div><!-- row -->
+
             </div><!-- container -->    
                     
         </header><!-- HEADER -->
