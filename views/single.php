@@ -10,19 +10,19 @@ Yii::$app->params['currentCatalog'] = $catalog;
 
 <div class="col-sm-6">
     <div class="headline style-1">
-        <h4>IFS Services</h4>
         <h2><?=$catalog->surname?></h2>
     </div><!-- headline -->
 
     <div id="realcontent">
         <?= $catalog->content ?>
     </div>
-    <br/>
-    <a class="btn btn-default" href="<?= Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=> 60])?>">Free Quotation</a>
+    <br/><br/><br/>
 </div><!-- col -->
 
 <div class="col-sm-6">
     <p class="text-center wow pulse animated" style="visibility: visible; animation-name: pulse;">
         <img src="<?='/'.$catalog->banner?>" alt="">
     </p>
+        <br/><br/><br/>
+
 </div><!-- col -->

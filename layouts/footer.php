@@ -58,8 +58,17 @@
                                     <li>
                                         <span>Phone</span>                                    
                                         <a href="telto:<?=Yii::$app->setting->get('mobile')?>">
-                                            <?php echo(Yii::$app->setting->get('mobile')) ?>
+                                            <?php echo(Yii::$app->setting->get('mobile'));?>
                                         </a>
+                                        
+                                        <?php 
+                                        $phone = Yii::$app->setting->get('phone'); 
+                                        if($phone != null){?>
+                                        <br/>
+                                            <a href="telto:<?=$phone?>">
+                                                <?=$phone?>
+                                            </a>                                        
+                                        <?php } ?>
                                     </li>
                                     <li>
                                         <span>E-mail</span>
