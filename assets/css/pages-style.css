@@ -98,7 +98,7 @@
  ***********************************************************************************/
  	
 	#logo {
-		margin: 29px 0;
+		margin: 29px 0 0px;
 	}
 	
 	#logo a {
@@ -139,7 +139,7 @@
 	
 	.menu > li > a {
 		position: relative;
-		padding: 10px 20px 51px 20px;
+		padding: 10px 20px 22px 20px;
 		margin-right: 15px;
 		font-size: 12px;
 		text-transform: uppercase;
@@ -700,11 +700,11 @@
  	
 	#footer-bottom {
 		background-color: #2b2e31;
-		color: #585c62;
+		color: #c9bfbf;
 	}
 	
 	#footer-bottom a {
-		color: #585c62;
+		color: #c9bfbf;
 	}
 	
 	#footer-bottom a:hover {
