@@ -43,10 +43,10 @@
                         <form id="contact-form" name="contact-form" action="assets/php/send.php" method="post">
                             <fieldset>
                                 <div id="alert-area"></div>
-                                <input class="col-xs-12" id="name" type="text" name="name" placeholder="name">
-                                <input class="col-xs-12" id="email" type="text" name="email" placeholder="email">
-                                <input class="col-xs-12" id="subject" type="text" name="subject" placeholder="subject">
-                                <textarea class="col-xs-12" id="message" name="message" rows="8" cols="25" placeholder="message"></textarea>
+                                <input class="col-xs-12" id="name" type="text" name="name" placeholder="Name">
+                                <input class="col-xs-12" id="email" type="text" name="email" placeholder="Email">
+                                <input class="col-xs-12" id="subject" type="text" name="subject" placeholder="Subject">
+                                <textarea class="col-xs-12" id="message" name="message" rows="8" cols="25" placeholder="Message"></textarea>
                                 <input class="btn btn-default" id="submit" type="submit" name="submit" value="Submit">
                             </fieldset>
                         </form>
