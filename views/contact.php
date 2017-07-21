@@ -31,7 +31,7 @@
                         <div class="headline style-3">
                             <h5>Say hello</h5>
                             <h2>Contact our team</h2>
-                            <p> We will get back to you asap.</p>
+                            <p> We aim to reply to all emails within 24 hours.</p>
                         </div><!-- headline -->
                     </div><!-- col -->
                 </div><!-- row -->
