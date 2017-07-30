@@ -11,12 +11,16 @@
     <meta charset="<?= Yii::$app->charset ?>"/>
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
     <?php if(isset(Yii::$app->params['keywords'])){ ?>
-        <meta name="keywords" content="<?= Html::encode(Yii::$app->params['keywords']) ?>" />
+    <meta name="keywords" content="<?= Html::encode(Yii::$app->params['keywords']) ?>" />
     <?php } ?>
-        
     <?php if(isset(Yii::$app->params['description'])) { ?>    
-        <meta name="description" content="<?= Html::encode(Yii::$app->params['description']) ?>" />
+    <meta name="description" content="<?= Html::encode(Yii::$app->params['description']) ?>" />
     <?php } ?>
+    <?php 
+    $googleverification = Yii::$app->setting->get('google-site-verification');
+    if($googleverification != null){ ?>
+    <meta name="google-site-verification" content="<?=$googleverification?>" />    
+    <?php } ?>        
     <meta name="author" content="http://chinasoftware.co.uk">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/icons/apple-touch-57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icons/apple-touch-72x72.png">
