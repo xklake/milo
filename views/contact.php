@@ -12,13 +12,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h4>Contact</h4>
+                            <h4><?=Yii::t('app', 'Contact')?></h4>
                         </div><!-- col -->
 
                         <div class="col-sm-6">
                             <ol class="breadcrumb">
-                                <li><a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">Home</a></li>
-                                <li class="active">Contact</li>
+                                <li><a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>"><?=Yii::t('app', 'Home')?></a></li>
+                                <li class="active"><?=Yii::t('app', 'Contact')?></li>
                             </ol>
                         </div><!-- col -->
                     </div><!-- row -->
@@ -29,9 +29,9 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="headline style-3">
-                            <h5>Say hello</h5>
-                            <h2>Contact our team</h2>
-                            <p> We aim to reply to all emails within 24 hours.</p>
+                            <!--h5>Say hello</h5-->
+                            <h2><?=Yii::t('app', 'Contact our team')?></h2>
+                            <p> <?=Yii::t('app', 'We aim to reply to all emails within 24 hours.')?></p>
                         </div><!-- headline -->
                     </div><!-- col -->
                 </div><!-- row -->
@@ -43,11 +43,11 @@
                         <form id="contact-form" name="contact-form" action="assets/php/send.php" method="post">
                             <fieldset>
                                 <div id="alert-area"></div>
-                                <input class="col-xs-12" id="name" type="text" name="name" placeholder="Name">
-                                <input class="col-xs-12" id="email" type="text" name="email" placeholder="Email">
-                                <input class="col-xs-12" id="subject" type="text" name="subject" placeholder="Subject">
-                                <textarea class="col-xs-12" id="message" name="message" rows="8" cols="25" placeholder="Message"></textarea>
-                                <input class="btn btn-default" id="submit" type="submit" name="submit" value="Submit">
+                                <input class="col-xs-12" id="name" type="text" name="name" placeholder="<?=Yii::t('app', 'Name')?>">
+                                <input class="col-xs-12" id="email" type="text" name="email" placeholder="<?=Yii::t('app', 'Email')?>">
+                                <input class="col-xs-12" id="subject" type="text" name="subject" placeholder="<?=Yii::t('app', 'Subject')?>">
+                                <textarea class="col-xs-12" id="message" name="message" rows="8" cols="25" placeholder="<?=Yii::t('app', 'Message')?>"></textarea>
+                                <input class="btn btn-default" id="submit" type="submit" name="submit" value="<?=Yii::t('app', 'Submit')?>">
                             </fieldset>
                         </form>
                     </div><!-- col -->
@@ -55,10 +55,10 @@
                     	
                         <div class="widget widget-contact">
                         	
-                            <h3 class="widget-title">Contact Information</h3>
+                            <h3 class="widget-title"><?=Yii::t('app', 'CONTACT INFORMATION')?></h3>
                             <ul>
                                 <li>
-                                	<span>Office Main Contact</span> <br/>                                
+                                	<span><?=Yii::t('app', 'OFFICE MAIN CONTACT')?></span> <br/>                                
                                     <a href="telto:<?=Yii::$app->setting->get('mobile')?>">
                                         <?php echo(Yii::$app->setting->get('mobile')) ?>
                                     </a><br/>
@@ -67,7 +67,7 @@
                                 </li>
                                 
                                 <li>
-                                  <span>CONTACT A MEMBER</span><br/>
+                                  <span><?=Yii::t('app', 'CONTACT A MEMBER')?></span><br/>
                                         <?php 
                                             $members = common\models\Product::find()->where(['status' => funson86\blog\models\Status::STATUS_ACTIVE])->all();
                                             foreach($members as $item){
