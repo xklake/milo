@@ -10,7 +10,7 @@
 						</div><!-- logo -->
                     </div><!-- col -->
                     <div class="col-sm-10">
-                        <a class='search-button' href="http://en.ifs-tax.com">
+                        <a class='search-button' href="http://cn.ifs-tax.com">
                             <img src="/images/cn.png" style='vertical-align: middle;'/>
                         </a>                        
                         <!-- MENU --> 
@@ -19,7 +19,7 @@
                                              
                             <ul class="menu clearfix" id="menu">
                                 <li class="megamenu active">
-                                    <a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">Home</a>  
+                                    <a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>"><?=Yii::t('app','Home')?></a>  
                                 </li>
                                 
                                 <?php 
