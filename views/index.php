@@ -146,7 +146,7 @@
                         <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                             <div class="services-boxes-content">
                                 <h3>
-                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>62])?>">NON-DOMICILED INDIVIDUALS</a>
+                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>64])?>">NON-DOMICILED INDIVIDUALS</a>
                                     <small>---------------------</small>
                                 </h3>
                                 <p>
@@ -205,7 +205,7 @@
                         <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                             <div class="services-boxes-content">
                                 <h3>
-                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>64])?>">ESTATES & WILLS</a>
+                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>63])?>">ESTATES & WILLS</a>
                                     <small>---------------------</small>
                                 </h3>
                                 <p>
