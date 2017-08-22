@@ -19,7 +19,8 @@
 
                         <br>
 
-                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">Free quotation <i class="fa fa-arrow-right"></i></a></p>
+                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">
+                                <?=Yii::t('app', 'Free quotation')?> <i class="fa fa-arrow-right"></i></a></p>
 
                     </div><!-- col -->
                 </div><!-- row -->
