@@ -5,6 +5,9 @@
  * Date: 6/10/16
  * Time: 2:18 PM
  */
+use yii\helpers\Html;
+$model = new \frontend\models\QuoteForm();
+
 ?>
         <div class="content">
             
@@ -39,18 +42,23 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-6">
-                        <form id="contact-form" name="contact-form" action="assets/php/send.php" method="post">
-                            <fieldset>
-                                <div id="alert-area"></div>
-                                <input class="col-xs-12" id="name" type="text" name="name" placeholder="<?=Yii::t('app', 'Name')?>">
-                                <input class="col-xs-12" id="email" type="text" name="email" placeholder="<?=Yii::t('app', 'Email')?>">
-                                <input class="col-xs-12" id="subject" type="text" name="subject" placeholder="<?=Yii::t('app', 'Subject')?>">
-                                <textarea class="col-xs-12" id="message" name="message" rows="8" cols="25" placeholder="<?=Yii::t('app', 'Message')?>"></textarea>
-                                <input class="btn btn-default" id="submit" type="submit" name="submit" value="<?=Yii::t('app', 'Submit')?>">
-                            </fieldset>
-                        </form>
-                    </div><!-- col -->
+            <div class="col-sm-offset-1 col-sm-6">
+                <?/*php $form = yii\widgets\ActiveForm::begin(['id' => 'contact-form', 'options' => ['enctype' => 'multipart/form-data', 'method' => 'post'],'action' => '']); */?>
+<form id='contact-form'>
+                <fieldset>
+                    <div id="alert-area">
+                    </div>                    
+                        <?= yii\helpers\Html::activeTextInput($model, 'name', ['class' => 'col-xs-12', 'placeholder' => Yii::t('app', 'Name')]) ?>
+                        <?= Html::activeTextInput($model, 'phone', ['class' => 'col-xs-12', 'placeholder' => Yii::t('app', 'Phone')]) ?>
+                        <?= Html::activeTextInput($model, 'email', ['class' => 'col-xs-12', 'placeholder' => Yii::t('app', 'Email')]) ?>
+                        <?= Html::activeTextarea($model, 'body', ['class' => 'col-xs-12', 'placeholder' => Yii::t('app', 'Message'), 'rows' => 5, 'id'=> 'message']) ?>
+                        <?= Html::submitButton(Yii::t('app', 'Submit'), ['class' => 'btn btn-default', 'name' => 'quote-button']) ?>
+<input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
+                </fieldset>
+</form>
+                <?php /*yii\widgets\ActiveForm::end(); */?>
+            </div>
+
                     <div class="col-sm-5">
                     	
                         <div class="widget widget-contact">
@@ -86,7 +94,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9087491777095!2d-0.1257258843067004!3d51.51489007963633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ccab26369b%3A0xcbca337b01407c64!2s75+Shelton+St%2C+London+WC2H+9JQ!5e0!3m2!1szh-CN!2suk!4v1499953249615" width="100%" height="400" frameborder="1" style="border-top:#bca480 1px solid;border-bottom:#bca480 1px solid;" allowfullscreen>
+                        <iframe src="<?=Yii::$app->setting->get('googlemap')?>" width="100%" height="400" frameborder="1" style="border-top:#bca480 1px solid;border-bottom:#bca480 1px solid;" allowfullscreen>
                         </iframe>                            
                     </div>
                 </div><!-- row -->

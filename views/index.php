@@ -1,7 +1,8 @@
 <div class="content">
 
-    <section class="full-section full-screen" style="background-image:url(/images/backgrounds/bg-6.jpg);height: 667px;">
+    <section class="full-section full-screen" style="background-image:url(/images/backgrounds/bg-6.jpg);">
         <div class="full-section-content">
+
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">	
@@ -18,8 +19,7 @@
 
                         <br>
 
-                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">
-                                <?=Yii::t('app', 'Free quotation')?> <i class="fa fa-arrow-right"></i></a></p>
+                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">Free quotation <i class="fa fa-arrow-right"></i></a></p>
 
                     </div><!-- col -->
                 </div><!-- row -->
@@ -48,7 +48,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4" style="min-height: 200px;">
+            <div class="col-sm-4">
 
                 <div class="services-boxes style-2 wow fadeInDown">
 
@@ -73,7 +73,7 @@
                 </div><!-- services-boxes -->
 
             </div><!-- col -->
-            <div class="col-sm-4" style="min-height: 200px;">
+            <div class="col-sm-4">
 
                 <div class="services-boxes style-2 wow fadeInDown" data-wow-delay="0.3s">
 
@@ -98,7 +98,7 @@
                 </div><!-- services-boxes -->
             </div><!-- col -->
 
-            <div class="col-sm-4" style="min-height: 200px;">
+            <div class="col-sm-4">
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
 

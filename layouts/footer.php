@@ -104,7 +104,7 @@
                             <div class="widget widget-flickr">
                                 <h3 class="widget-title"><?=Yii::t('app', "IN GOOGLEMAP")?></h3>
                                 <div class="flickr-photos">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9087491777095!2d-0.1257258843067004!3d51.51489007963633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ccab26369b%3A0xcbca337b01407c64!2s75+Shelton+St%2C+London+WC2H+9JQ!5e0!3m2!1szh-CN!2suk!4v1499953249615" width="100%" height="295" frameborder="1" style="border:#bca480 1px solid;" allowfullscreen>
+                                    <iframe src="<?=Yii::$app->setting->get('googlemap')?>" width="100%" height="295" frameborder="1" style="border:#bca480 1px solid;" allowfullscreen>
                                     </iframe>
                                 </div><!-- flickr-photos -->
                                 
@@ -128,7 +128,7 @@
                                 $copyright = Yii::$app->setting->get('copyright'); 
                                 if($copyright != null){?>
                                     <p class="last text-center">
-                                        <?=$copyright?>  <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['catalog/view', 'id'=> 66])?>"><span style="color:#bca480;font-size:0.95rem">Web Privacy Statement</span></a>
+                                        <?=$copyright?><a style="margin-left:20px;" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['catalog/view', 'id'=> 66])?>"><span style="color:#bca480;font-size:0.95rem">Web Privacy Statement</span></a>
                                     </p>
                                 <?php } ?>
                                 <div class="text-lowercase text-center" style='font-size:1rem;'> 

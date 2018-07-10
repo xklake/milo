@@ -36,7 +36,6 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h4><?=Yii::t('app','services')?></h4>
                         </div><!-- col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb">

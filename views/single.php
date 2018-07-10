@@ -10,7 +10,8 @@ Yii::$app->params['currentCatalog'] = $catalog;
 
 <div class="col-sm-6">
     <div class="headline style-1">
-        <h2><?=$catalog->surname?></h2>
+<h2><?=$catalog->surname?></h2>
+  
     </div><!-- headline -->
 
     <div id="realcontent">

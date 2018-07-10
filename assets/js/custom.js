@@ -832,18 +832,17 @@
 					required: "Please enter your message!"
 				}
 			},
-				
+
 			// SUBMIT //
 			submitHandler: function(form) {
 				var result;
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "assets/php/send.php",
+					url: "/query.html",
 					success: function(msg) {
-						
-						if (msg == 'OK') {
-							result = '<div class="alert alert-success">Your message was successfully sent!</div>';
+						if (msg.status == 1) {
+							result = '<div class="alert alert-success">Thank you for contacting us. <br/>We will endeavour to get back to you shortly.<br/>For urgent queries please call 07875221013 / 077791845870 or email kq@ifs-tax.com and jx@ifs-tax.com!</div>';
 							$("#contact-form").clearForm();
 						} else {
 							result = msg;
@@ -853,13 +852,13 @@
 	
 					},
 					error: function() {
-	
 						result = '<div class="alert alert-danger">There was an error sending the message!</div>';
 						$("#alert-area").html(result);
-	
 					}
 				});
 			}
+				
+
 		});
 		
 		
