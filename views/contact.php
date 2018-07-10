@@ -43,8 +43,7 @@ $model = new \frontend\models\QuoteForm();
             <div class="container">
                 <div class="row">
             <div class="col-sm-offset-1 col-sm-6">
-                <?/*php $form = yii\widgets\ActiveForm::begin(['id' => 'contact-form', 'options' => ['enctype' => 'multipart/form-data', 'method' => 'post'],'action' => '']); */?>
-<form id='contact-form'>
+                <form id='contact-form'>
                 <fieldset>
                     <div id="alert-area">
                     </div>                    
@@ -53,9 +52,9 @@ $model = new \frontend\models\QuoteForm();
                         <?= Html::activeTextInput($model, 'email', ['class' => 'col-xs-12', 'placeholder' => Yii::t('app', 'Email')]) ?>
                         <?= Html::activeTextarea($model, 'body', ['class' => 'col-xs-12', 'placeholder' => Yii::t('app', 'Message'), 'rows' => 5, 'id'=> 'message']) ?>
                         <?= Html::submitButton(Yii::t('app', 'Submit'), ['class' => 'btn btn-default', 'name' => 'quote-button']) ?>
-<input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
+                        <input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
                 </fieldset>
-</form>
+                </form>
                 <?php /*yii\widgets\ActiveForm::end(); */?>
             </div>
 

@@ -15,11 +15,11 @@
             	
                 <div class="container">
                 	<div class="row">
-                    	<div class="col-sm-3">
+                    	<div class="col-sm-4">
                         	
                             <div class="widget widget-text">
                             	
-                                <h3 class="widget-title"><?=Yii::t('app','About IFS')?></h3>
+                                <h3 class="widget-title"><?=Yii::t('app','About Us')?></h3>
                                 
                                 <p>
                                     <?php 
@@ -30,26 +30,11 @@
                                         }
                                     ?>                                
                                 </p>
-                                <p>
-                                    <span style="color:#bca480;"><?=Yii::t('app', "WE'RE MEMBER OF")?></span>
-                                    <?php
-                                        $images = Yii::$app->getImageByGroup('qualification');
-                                        foreach ($images as $img) {
-                                    ?>
-                                        <img src="<?='/'.$img->image?>">
-                                    <?php } ?>
-                                </p>
-                                
                             </div><!-- widget-text -->
-                            
                             <div class="widget widget-newsletter">                        	
-
-                            
-                            
-                        </div><!-- widget-newsletter -->
-                        
+                            </div><!-- widget-newsletter -->
                         </div><!-- col -->
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="widget widget-contact">
                                 
                                 <h3 class="widget-title"><?=Yii::t('app', "Contact Us")?></h3>
@@ -83,7 +68,7 @@
                             </div><!-- widget-contact -->
                             
                         </div><!-- col -->                        
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="widget widget-contact">
                                 <h3 class="widget-title"><?=Yii::t('app', "CONTACT A MEMBER")?></h3>
                                 <ul>
@@ -98,18 +83,6 @@
                                     <?php } ?>
                                 </ul>
                             </div><!-- widget-recent-posts -->
-                        </div><!-- col -->
-
-                        <div class="col-sm-3">
-                            <div class="widget widget-flickr">
-                                <h3 class="widget-title"><?=Yii::t('app', "IN GOOGLEMAP")?></h3>
-                                <div class="flickr-photos">
-                                    <iframe src="<?=Yii::$app->setting->get('googlemap')?>" width="100%" height="295" frameborder="1" style="border:#bca480 1px solid;" allowfullscreen>
-                                    </iframe>
-                                </div><!-- flickr-photos -->
-                                
-                            </div><!-- widget-flickr -->
-                            
                         </div><!-- col -->
 
                     </div><!-- row -->

@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="headline style-3">
-                    <h2>Services</h2>
+                    <h2>Our Services</h2>
                     
                     <?php 
                         $subtitle = Yii::$app->getTextBlock('home-service-subtitle');
@@ -48,8 +48,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-
+            <div class="col-sm-6">
                 <div class="services-boxes style-2 wow fadeInDown">
 
                     <div class="services-boxes-content">
@@ -73,7 +72,7 @@
                 </div><!-- services-boxes -->
 
             </div><!-- col -->
-            <div class="col-sm-4">
+            <div class="col-sm-6">
 
                 <div class="services-boxes style-2 wow fadeInDown" data-wow-delay="0.3s">
 
@@ -98,7 +97,7 @@
                 </div><!-- services-boxes -->
             </div><!-- col -->
 
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
 
@@ -121,7 +120,7 @@
                 </div><!-- services-boxes -->                                                
             </div><!-- col -->
             
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
                         <h3>
@@ -139,103 +138,8 @@
                     </div><!-- services-boxes-content -->
                 </div><!-- services-boxes -->                                                
             </div><!-- col -->
-            <?php 
-                $service = Yii::$app->getTextBlock('home-service-non-domicile');            
-                if($service){ ?>
-                    <div class="col-sm-4">
-                        <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
-                            <div class="services-boxes-content">
-                                <h3>
-                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>64])?>">NON-DOMICILED INDIVIDUALS</a>
-                                    <small>---------------------</small>
-                                </h3>
-                                <p>
-                                    <?=$service->content ?>
-                                </p>
-                            </div><!-- services-boxes-content -->
-                        </div><!-- services-boxes -->                                                
-                    </div><!-- col -->          
-            <?php } ?>
-            
-            <div class="col-sm-4">
-                <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
-                    <div class="services-boxes-content">
-                        <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>57])?>">Property Tax</a>
-                            <small>---------------------</small>
-                        </h3>
-
-                        <p>
-                            <?php 
-                                $service = Yii::$app->getTextBlock('home-service-propertytax');
-                                if($service){
-                                    echo($service->content);
-                                }                            
-                            ?>
-                        </p>
-
-                    </div><!-- services-boxes-content -->
-
-                </div><!-- services-boxes -->                                                
-            </div><!-- col -->
-            
-            <div class="col-sm-4">
-                <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
-                    <div class="services-boxes-content">
-                        <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>58])?>">Inheritance Tax</a>
-                            <small>---------------------</small>
-                        </h3>
-                        <p>
-                            <?php
-                            $service = Yii::$app->getTextBlock('home-service-inheritancetax');
-                            if ($service) {
-                                echo($service->content);
-                            }
-                            ?>
-                        </p>
-                    </div><!-- services-boxes-content -->
-                </div><!-- services-boxes -->                                                
-            </div><!-- col -->
-            
-            <?php 
-                $service = Yii::$app->getTextBlock('home-service-estatewills');            
-                if($service){ ?>
-                    <div class="col-sm-4">
-                        <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
-                            <div class="services-boxes-content">
-                                <h3>
-                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>63])?>">ESTATES & WILLS</a>
-                                    <small>---------------------</small>
-                                </h3>
-                                <p>
-                                    <?=$service->content ?>
-                                </p>
-                            </div><!-- services-boxes-content -->
-                        </div><!-- services-boxes -->                                                
-                    </div><!-- col -->          
-            <?php } ?>
-                    
-                    
-            <?php 
-                $service = Yii::$app->getTextBlock('home-service-vat');            
-                if($service){ ?>
-                    <div class="col-sm-4">
-                        <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
-                            <div class="services-boxes-content">
-                                <h3>
-                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>61])?>">VAT AND INDIRECT TAX</a>
-                                    <small>---------------------</small>
-                                </h3>
-                                <p>
-                                    <?=$service->content ?>
-                                </p>
-                            </div><!-- services-boxes-content -->
-                        </div><!-- services-boxes -->                                                
-                    </div><!-- col -->          
-            <?php } ?>                    
         </div><!-- row -->
-    </div><!-- ontainer --> 
+    </div><!-- container --> 
     
     <br><br><br>
 </div><!-- CONTENT -->
