@@ -128,7 +128,7 @@
                                 $copyright = Yii::$app->setting->get('copyright'); 
                                 if($copyright != null){?>
                                     <p class="last text-center">
-                                        <?=$copyright?>
+                                        <?=$copyright?>  <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['catalog/view', 'id'=> 66])?>"><span style="color:#bca480;font-size:0.95rem">Web Privacy Statement</span></a>
                                     </p>
                                 <?php } ?>
                                 <div class="text-lowercase text-center" style='font-size:1rem;'> 
