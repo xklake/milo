@@ -19,7 +19,7 @@
 
                         <br>
 
-                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">Free quotation <i class="fa fa-arrow-right"></i></a></p>
+                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">CONTACT US NOW<i class="fa fa-arrow-right"></i></a></p>
 
                     </div><!-- col -->
                 </div><!-- row -->
@@ -54,13 +54,13 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>53])?>">ACCOUNTING AND TAX SOLUTIONS</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>67])?>">PROPERTY DEVELOPMENT</a>
                             <small>---------------------</small>
                         </h3>
 
                         <p>
                             <?php 
-                                $service = Yii::$app->getTextBlock('home-service-accounting');
+                                $service = Yii::$app->getTextBlock('development');
                                 if($service){
                                     echo($service->content);
                                 }                            
@@ -79,13 +79,13 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>54])?>">Company Secretarial Services</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>68])?>">PROPERTY INVESTMENT</a>
                             <small>---------------------</small>
                         </h3>
 
                         <p>
                             <?php 
-                                $service = Yii::$app->getTextBlock('home-service-companysecretarialservices');
+                                $service = Yii::$app->getTextBlock('investment');
                                 if($service){
                                     echo($service->content);
                                 }                            
@@ -102,7 +102,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>55])?>">Business Start-up and Development</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>69])?>">LAND INVESTMENT</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -124,7 +124,7 @@
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>56])?>">Personal & Business Tax</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>70])?>">INVESTMENT ADVISORS</a>
                             <small>---------------------</small>
                         </h3>
                         <p>
