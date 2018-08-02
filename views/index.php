@@ -155,44 +155,36 @@
 
                     <div class="testimonial-slider">
                         <ul>
-                                <li>
-                                <div class="testimonial">
-
-                                    <blockquote>
-                                        <p>TEAM MEMBER 1, TEAM MEMBER 1, TEAM MEMBER 1, TEAM MEMBER 1, TEAM MEMBER 1, </p>
-                                    </blockquote> 
-
-                                    <h5>John Smith</h5>                        
-
-                                </div><!-- testimonial -->
-                            </li>
+                            <?php  
+                                $members = \funson86\blog\models\BlogPost::find()->where(['status' => \funson86\blog\models\Status::STATUS_ACTIVE])
+                                        ->orderBy(['created_at' =>SORT_ASC])->all();
+                                foreach($members as $item){
+                            ?>
                             <li>
                                 <div class="testimonial">
 
                                     <blockquote>
-                                        <p>TEAM MEMBER 2, TEAM MEMBER 2TEAM MEMBER 2TEAM MEMBER 2TEAM MEMBER 2TEAM MEMBER 2</p>
+                                        <p><?=$item->brief?></p>
                                     </blockquote> 
 
-                                    <h5>Jane Smith, MiloBrand</h5>                        
+                                    <h5>
+                                        <?=$item->title?>
+                                    </h5>                        
 
                                 </div><!-- testimonial -->
                             </li>
-                            <li>
-                                <div class="testimonial">
-
-                                    <blockquote>
-                                        <p>TEAM MEMBER 3，TEAM MEMBER 3TEAM MEMBER 3TEAM MEMBER 3TEAM MEMBER 3TEAM MEMBER 3</p>
-                                    </blockquote> 
-
-                                    <h5>Paul Willson, The Muse</h5>                        
-
-                                </div><!-- testimonial -->
-                            </li>
+                            <?php }?>
                         </ul>
                         <div id="thumb-pager">
-                            <a data-slide-index="0" href=""><img src="images/testimonials/image-1.jpg" alt=""></a>
-                            <a data-slide-index="1" href=""><img src="images/testimonials/image-2.jpg" alt=""></a>
-                            <a data-slide-index="2" href=""><img src="images/testimonials/image-3.jpg" alt=""></a>
+                            <?php  
+                            $index = 0;
+                            foreach($members as $item) { 
+                                
+                            ?>
+                            <a data-slide-index="<?=$index?>" href=""><img src="images/testimonials/image-<?=$index + 1?>.jpg" alt=""></a>
+                            <?php  
+                                $index ++;
+                            } ?>
                         </div><!-- thumb-pager -->
 
                     </div><!-- testimonial-slider -->
