@@ -1,27 +1,27 @@
         <header id="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-2">
+                    <div class="col-sm-4">
                         <!-- LOGO -->
                         <div id="logo">
-							<a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">
-								<img src="<?=Yii::$app->urlManager->getHostInfo().'/'.Yii::$app->getImages('logo')->image?>" alt="">
-							</a>
-						</div><!-- logo -->
+                            <a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>">
+                                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.Yii::$app->getImages('logo')->image?>" alt="" >
+                            </a>
+                        </div><!-- logo -->
                     </div><!-- col -->
-                    <div class="col-sm-10">
+                    <div class="col-sm-8">
                         <a class='search-button' href="http://cn.nerei.co.uk">
                             <img src="/images/cn.png" style='vertical-align: middle;'/>
                         </a>                        
                         <!-- MENU --> 
                         <nav>
                             <a id="mobile-menu-button" href="#"><i class="fa fa-bars"></i></a>
-                                             
+
                             <ul class="menu clearfix" id="menu">
                                 <li class="megamenu active">
                                     <a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>"><?=Yii::t('app','Home')?></a>  
                                 </li>
-                                
+
                                 <?php 
                                     foreach(Yii::$app->params['mainMenu'] as $item) {
                                     $sons = \funson86\blog\models\BlogCatalog::find()->where(['parent_id' =>$item['id']])->andWhere(['status'=> \funson86\blog\models\Status::STATUS_ACTIVE])->orderBy(['sort_order'=>SORT_ASC])->all();
@@ -46,7 +46,7 @@
                                     <?php } ?>
                                 <?php } ?>                                
                             </ul>
-                    	</nav>
+                        </nav>                    
                     </div><!-- col -->
                 </div><!-- row -->
 
