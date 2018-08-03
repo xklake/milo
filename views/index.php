@@ -1,5 +1,4 @@
 <div class="content">
-
     <section class="full-section full-screen" style="background-image:url(/images/backgrounds/bg-6.jpg);">
         <div class="full-section-content">
 
