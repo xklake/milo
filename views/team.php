@@ -39,7 +39,7 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row row-eq-height">
 
             <?php
                 $members = \funson86\blog\models\BlogPost::find()->where(['status' => \funson86\blog\models\Status::STATUS_ACTIVE])

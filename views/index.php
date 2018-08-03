@@ -231,7 +231,7 @@
 
                         <div class="portfolio-item-thumbnail">
 
-                            <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
+                            <img src="/images/portfolio/image-1.jpg" alt="">
 
                             <div class="portfolio-item-hover">                                	                                    
 

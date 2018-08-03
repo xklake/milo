@@ -41,7 +41,7 @@
             ->orderBy(['created_at' => SORT_DESC])->all();
             foreach($projects as $item){
         ?>
-            <div class="row">
+            <div class="row row-eq-height">
                 <div class="col-md-3 col-sm-6">
                     <div class="portfolio-item wow fadeInLeft">
 
