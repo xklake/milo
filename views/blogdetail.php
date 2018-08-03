@@ -17,27 +17,29 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb">
                         <li><a href="<?= Yii::$app->urlManager->getHostInfo() . Yii::$app->homeUrl ?>"><?= Yii::t('app', 'Home') ?></a></li>
-                        <li class="active"><?= Yii::t('app', 'OUR PROJECTS') ?></li>
+                        <li class="active"><?= $post->catalog->title ?></li>
                     </ol>
                 </div><!-- col -->
             </div><!-- row -->
         </div><!-- ontainer -->    
-
-
     </div><!-- page-header -->
 
     <div class="container">
-
         <div class="col-md-8">
             <div class="blog-article">
+                    <?php if($post->catalog->id != 59){?>
+                
                 <div class="blog-article-thumbnail">
                     <img src="/images/blog/image-2.jpg" alt="">
                 </div><!-- blog-article-thumbnail -->
-
+                    <?php } ?>
                 <div class="blog-article-details">
 
                     <!--h4>5 March 2015</h4-->
                     <h2><?=$post->title?></h2>
+                    <?php if($post->catalog->id == 59){?>
+                    <h4><?=$post->keywords?></h4>
+                    <?php } ?>
 
                     <!--p>
                             <i class="miu-icon-business_namecard_contact_info_outline_stroke"></i>
@@ -55,7 +57,7 @@
         </div><!--/.col-md-8-->
 
         <aside class="col-md-4">
-            <?= $this->render('/blogsidenav.php', []) ?>
+            <?= $this->render('/blogsidenav.php', ['catalog' => $post->catalog]) ?>
         </aside>
     </div>    
 </div>

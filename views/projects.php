@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h4><?= Yii::t('app', 'Our Projects') ?></h4>
+                    <h4><?= Yii::t('app', 'OUR PROJECTS') ?></h4>
                 </div><!-- col -->
 
                 <div class="col-sm-6">
                     <ol class="breadcrumb">
                         <li><a href="<?= Yii::$app->urlManager->getHostInfo() . Yii::$app->homeUrl ?>"><?= Yii::t('app', 'Home') ?></a></li>
-                        <li class="active"><?= Yii::t('app', 'Our Projects') ?></li>
+                        <li class="active"><?= Yii::t('app', 'OUR PROJECTS') ?></li>
                     </ol>
                 </div><!-- col -->
             </div><!-- row -->
@@ -47,7 +47,7 @@
 
                         <div class="portfolio-item-thumbnail">
 
-                            <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
+                            <img src="/images/portfolio/image-1.jpg" alt="">
 
                             <div class="portfolio-item-hover">                                	                                    
 
