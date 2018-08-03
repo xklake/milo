@@ -157,7 +157,8 @@
                         <ul>
                             <?php  
                                 $members = \funson86\blog\models\BlogPost::find()->where(['status' => \funson86\blog\models\Status::STATUS_ACTIVE])
-                                        ->orderBy(['created_at' =>SORT_ASC])->all();
+                                        ->andWhere(['catalog_id' => 59])
+                                        ->orderBy(['created_at' =>SORT_DESC])->all();
                                 foreach($members as $item){
                             ?>
                             <li>
@@ -166,10 +167,16 @@
                                     <blockquote>
                                         <p><?=$item->brief?></p>
                                     </blockquote> 
-
-                                    <h5>
-                                        <?=$item->title?>
-                                    </h5>                        
+                                    
+                                    <div style="margin-bottom: 30px;">
+                                        <h5>Role & Certification</h5>
+                                        <?=$item->keywords?>
+                                    </div>    
+                                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id' => $item->id])?>">
+                                        <h5>
+                                            <?=$item->title?>
+                                        </h5>    
+                                    </a>       
 
                                 </div><!-- testimonial -->
                             </li>
@@ -213,111 +220,40 @@
     </div><!-- ontainer -->    
     
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item wow fadeInLeft">
+        <?php 
+          $projects = \funson86\blog\models\BlogPost::find()->where(['status' => \funson86\blog\models\Status::STATUS_ACTIVE])
+            ->andWhere(['catalog_id' => 73])
+            ->orderBy(['created_at' => SORT_DESC])->all();
+            foreach($projects as $item){
+        ?>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item wow fadeInLeft">
 
-                    <div class="portfolio-item-thumbnail">
+                        <div class="portfolio-item-thumbnail">
 
-                        <img src="images/portfolio/image-1.jpg" alt="">
+                            <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
 
-                        <div class="portfolio-item-hover">                                	                                    
+                            <div class="portfolio-item-hover">                                	                                    
 
-                            <div class="portfolio-item-description">
+                                <div class="portfolio-item-description">
 
-                                <h3><a href="portfolio-single.html">Vector design</a></h3>
-                                <h5>Industrial design</h5>
+                                    <h3><a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id' => $item->id])?>"><?=$item->title?></a></h3>
+                                    <h5><?=$item->keywords?></h5>
 
-                            </div><!-- portfolio-item-description -->
+                                </div><!-- portfolio-item-description -->
 
-                            <a class="fancybox-portfolio-gallery zoom-action" href="images/portfolio/image-1.jpg"><i class="fa fa-plus"></i></a>
+                                <a class="fancybox-portfolio-gallery zoom-action" href="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>"><i class="fa fa-plus"></i></a>
 
-                        </div><!-- portfolio-item-hover -->
+                            </div><!-- portfolio-item-hover -->
 
-                    </div><!-- portfolio-item-thumbnail -->
+                        </div><!-- portfolio-item-thumbnail -->
 
-                </div><!-- portfolio-item -->
+                    </div><!-- portfolio-item -->
 
-            </div><!-- col -->
-            <div class="col-md-3 col-sm-6">
-
-                <div class="portfolio-item wow fadeInLeft" data-wow-delay="0.3s">
-
-                    <div class="portfolio-item-thumbnail">
-
-                        <img src="images/portfolio/image-2.jpg" alt="">
-
-                        <div class="portfolio-item-hover">                                	                                    
-
-                            <div class="portfolio-item-description">
-
-                                <h3><a href="portfolio-single.html">Lamp design</a></h3>
-                                <h5>Industrial design</h5>
-
-                            </div><!-- portfolio-item-description -->
-
-                            <a class="fancybox-portfolio-gallery zoom-action" href="images/portfolio/image-2.jpg"><i class="fa fa-plus"></i></a>
-
-                        </div><!-- portfolio-item-hover -->
-
-                    </div><!-- portfolio-item-thumbnail -->
-
-                </div><!-- portfolio-item -->
-
-            </div><!-- col -->
-            <div class="col-md-3 col-sm-6">
-
-                <div class="portfolio-item wow fadeInRight" data-wow-delay="0.3s">
-
-                    <div class="portfolio-item-thumbnail">
-
-                        <img src="images/portfolio/image-3.jpg" alt="">
-
-                        <div class="portfolio-item-hover">                                	                                    
-
-                            <div class="portfolio-item-description">
-
-                                <h3><a href="portfolio-single.html">Modern lamp</a></h3>
-                                <h5>Industrial design</h5>
-
-                            </div><!-- portfolio-item-description -->
-
-                            <a class="fancybox-portfolio-gallery zoom-action" href="images/portfolio/image-3.jpg"><i class="fa fa-plus"></i></a>
-
-                        </div><!-- portfolio-item-hover -->
-
-                    </div><!-- portfolio-item-thumbnail -->
-
-                </div><!-- portfolio-item -->
-
-            </div><!-- col -->
-            <div class="col-md-3 col-sm-6">
-
-                <div class="portfolio-item wow fadeInRight">
-
-                    <div class="portfolio-item-thumbnail">
-
-                        <img src="images/portfolio/image-4.jpg" alt="">
-
-                        <div class="portfolio-item-hover">                                	                                    
-
-                            <div class="portfolio-item-description">
-
-                                <h3><a href="portfolio-single.html">Vitamin</a></h3>
-                                <h5>Industrial design</h5>
-
-                            </div><!-- portfolio-item-description -->
-
-                            <a class="fancybox-portfolio-gallery zoom-action" href="images/portfolio/image-4.jpg"><i class="fa fa-plus"></i></a>
-
-                        </div><!-- portfolio-item-hover -->
-
-                    </div><!-- portfolio-item-thumbnail -->
-
-                </div><!-- portfolio-item -->
-
-            </div><!-- col -->
-        </div><!-- row -->
+                </div><!-- col -->
+            </div><!-- row -->
+        <?php } ?>
     </div><!-- container -->    
     
     <br><br><br>
