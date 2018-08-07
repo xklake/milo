@@ -19,9 +19,9 @@
         ?>
             <li>
                 <?php if($catalog->id == 73){?>
-                <img src="/images/blog/blog-post/post-1.jpg" alt="">
+                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
                 <?php } else if ($catalog->id == 59) {?>
-                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="" style="width:40px;">
+                <img src="/images/blank-profile.png" alt="" style="width:40px;">
                 <?php } ?>
                 <a class="post-title" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id' => $item->id])?>"><?=$item->title?></a>
             </li>
