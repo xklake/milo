@@ -222,13 +222,14 @@
     </div><!-- ontainer -->    
     
     <div class="container">
+        <div class="row">
+        
         <?php 
           $projects = \funson86\blog\models\BlogPost::find()->where(['status' => \funson86\blog\models\Status::STATUS_ACTIVE])
             ->andWhere(['catalog_id' => 73])
             ->orderBy(['created_at' => SORT_DESC])->all();
             foreach($projects as $item){
         ?>
-            <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="portfolio-item wow fadeInLeft">
 
@@ -254,8 +255,8 @@
                     </div><!-- portfolio-item -->
 
                 </div><!-- col -->
-            </div><!-- row -->
         <?php } ?>
+            </div><!-- row -->
     </div><!-- container -->    
     
     <br><br><br>
