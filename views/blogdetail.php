@@ -29,9 +29,9 @@
             <div class="blog-article">
                     <?php if($post->catalog->id != 59){?>
                 
-                <div class="blog-article-thumbnail">
+                <!--div class="blog-article-thumbnail">
                     <img src="/images/blog/image-2.jpg" alt="">
-                </div><!-- blog-article-thumbnail -->
+                </div--><!-- blog-article-thumbnail -->
                     <?php } ?>
                 <div class="blog-article-details">
 
