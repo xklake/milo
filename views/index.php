@@ -163,15 +163,16 @@
                             ?>
                             <li>
                                 <div class="testimonial">
-
-                                    <blockquote>
-                                        <p><?=$item->brief?></p>
-                                    </blockquote> 
-                                    
                                     <div style="margin-bottom: 30px;">
                                         <h5>Role & Certification</h5>
                                         <?=$item->keywords?>
                                     </div>    
+
+                                    <h5>Experiences</h5>
+                                    <blockquote>
+                                        <p><?=$item->brief?></p>
+                                    </blockquote> 
+                                    
                                     <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id' => $item->id])?>">
                                         <h5>
                                             <?=$item->title?>
