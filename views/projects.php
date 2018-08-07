@@ -35,19 +35,19 @@
     </div><!-- ontainer -->    
     
     <div class="container">
+        <div class="row row-eq-height">
         <?php 
           $projects = \funson86\blog\models\BlogPost::find()->where(['status' => \funson86\blog\models\Status::STATUS_ACTIVE])
             ->andWhere(['catalog_id' => 73])
             ->orderBy(['created_at' => SORT_DESC])->all();
             foreach($projects as $item){
         ?>
-            <div class="row row-eq-height">
                 <div class="col-md-3 col-sm-6">
                     <div class="portfolio-item wow fadeInLeft">
 
                         <div class="portfolio-item-thumbnail">
 
-                            <img src="/images/portfolio/image-1.jpg" alt="">
+                            <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
 
                             <div class="portfolio-item-hover">                                	                                    
 
@@ -67,7 +67,7 @@
                     </div><!-- portfolio-item -->
 
                 </div><!-- col -->
-            </div><!-- row -->
         <?php } ?>
+        </div><!-- row -->
     </div><!-- container -->    
 </div>
