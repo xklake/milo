@@ -107,7 +107,7 @@
 
                         <p>
                             <?php 
-                                $service = Yii::$app->getTextBlock('home-service-startupbiz');
+                                $service = Yii::$app->getTextBlock('land');
                                 if($service){
                                     echo($service->content);
                                 }                            
@@ -128,7 +128,8 @@
                         </h3>
                         <p>
                             <?php 
-                                $service = Yii::$app->getTextBlock('home-service-personalbiztax');
+                                $service = Yii::$app->getTextBlock('advisors');
+
                                 if($service){
                                     echo($service->content);
                                 }                            
