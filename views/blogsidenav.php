@@ -19,7 +19,7 @@
         ?>
             <li>
                 <?php if($catalog->id == 73){?>
-                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
+                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="" style="max-width: 80px;">
                 <?php } else if ($catalog->id == 59) {?>
                 <img src="/images/blank-profile.png" alt="" style="width:40px;">
                 <?php } ?>
