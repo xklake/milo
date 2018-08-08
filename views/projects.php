@@ -58,7 +58,7 @@
 
                                 </div><!-- portfolio-item-description -->
 
-                                <a class="fancybox-portfolio-gallery zoom-action" href="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>"><i class="fa fa-plus"></i></a>
+                                <a class="fancybox-portfolio-gallery zoom-action" href="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>"><!--i class="fa fa-plus"></i--></a>
 
                             </div><!-- portfolio-item-hover -->
 

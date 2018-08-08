@@ -174,11 +174,11 @@
                                         <h5>Role & Certification</h5>
                                         <?=$item->keywords?>
                                     </div>    
-
+                                    <?php /*
                                     <h5>Experiences</h5>
                                     <blockquote>
                                         <p><?=$item->brief?></p>
-                                    </blockquote> 
+                                    </blockquote> */?>
 
                                 </div><!-- testimonial -->
                             </li>
@@ -188,9 +188,8 @@
                             <?php  
                             $index = 0;
                             foreach($members as $item) { 
-                                
                             ?>
-                            <a data-slide-index="<?=$index?>" href=""><img src="images/testimonials/image-<?=$index + 1?>.jpg" alt=""></a>
+                            <a data-slide-index="<?=$index?>" href=""><img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt=""></a>
                             <?php  
                                 $index ++;
                             } ?>
@@ -245,9 +244,7 @@
                                     <h5><?=$item->keywords?></h5>
 
                                 </div><!-- portfolio-item-description -->
-
-                                <a class="fancybox-portfolio-gallery zoom-action" href="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>"><i class="fa fa-plus"></i></a>
-
+                                <a class="fancybox-portfolio-gallery zoom-action" href="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>"><!--i class="fa fa-plus"></i--></a>
                             </div><!-- portfolio-item-hover -->
 
                         </div><!-- portfolio-item-thumbnail -->

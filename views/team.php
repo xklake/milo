@@ -53,7 +53,7 @@
 
                             <div class="about-me-thumbnail">
 
-                                <img src="/images/Blank-profile.png" alt="">
+                                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="">
 
                                 <div class="social-media">
                                         
