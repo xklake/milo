@@ -18,7 +18,7 @@
                             <a id="mobile-menu-button" href="#"><i class="fa fa-bars"></i></a>
 
                             <ul class="menu clearfix" id="menu">
-                                <li class="megamenu active">
+                                <li>
                                     <a href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>"><?=Yii::t('app','Home')?></a>  
                                 </li>
 
