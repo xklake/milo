@@ -189,7 +189,7 @@
                             $index = 0;
                             foreach($members as $item) { 
                             ?>
-                            <a data-slide-index="<?=$index?>" href=""><img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt=""></a>
+                            <a data-slide-index="<?=$index?>" href=""><img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="" style="width:64px;height:64px;"></a>
                             <?php  
                                 $index ++;
                             } ?>

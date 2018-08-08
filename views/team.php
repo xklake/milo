@@ -53,7 +53,7 @@
 
                             <div class="about-me-thumbnail">
 
-                                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt="" style="width:64px;height:64px;">
+                                <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>" alt=""  style="max-width:400px;">
 
                                 <div class="social-media">
                                         
