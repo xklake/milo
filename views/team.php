@@ -29,8 +29,8 @@
                 <div class="headline style-3">
 
                     <h5>North End Real Esate Investment</h5>
-                    <h2>Meet our key team members</h2>
-                    <p> Our management team and specialists</p>
+                    <h2><?= Yii::t('app', 'Meet our key team members') ?></h2>
+                    <p><?= Yii::t('app', 'Our management team and specialists') ?> </p>
 
                 </div><!-- headline -->
 
@@ -58,10 +58,6 @@
                                 <div class="social-media">
                                         
                                     <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id' => $item->id])?>"> View</a>
-                                    <!--a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                    <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a-->
 
                                 </div><!-- social-media -->
 

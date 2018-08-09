@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="headline style-3">
-                    <h2>Our Projects</h2>
+                    <h2><?= Yii::t('app', 'OUR PROJECTS') ?></h2>
                     
                     <?php 
                         $subtitle = Yii::$app->getTextBlock('home-our-projects');
