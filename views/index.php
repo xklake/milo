@@ -1,5 +1,8 @@
 <div class="content">
-    <section class="full-section full-screen" style="background-image:url(/images/backgrounds/bg-6.jpg);">
+    <?php  
+    $bannerIamge = Yii::$app->getImages('banner-image');
+    ?>
+    <section class="full-section full-screen" style="background-image:url(/<?=$bannerIamge->url?>);">
         <div class="full-section-content">
 
             <div class="container">
