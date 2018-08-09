@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="headline style-3">
-                    <h2>Our Services</h2>
+                    <h2>服务项目</h2>
                     
                     <?php 
                         $subtitle = Yii::$app->getTextBlock('home-service-subtitle');
@@ -56,7 +56,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>67])?>">PROPERTY DEVELOPMENT</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>67])?>">地产开发</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -81,7 +81,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>68])?>">PROPERTY INVESTMENT</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>68])?>">物业投资</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -104,7 +104,7 @@
                     <div class="services-boxes-content">
 
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>69])?>">LAND INVESTMENT</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>69])?>">土地投资</a>
                             <small>---------------------</small>
                         </h3>
 
@@ -126,7 +126,7 @@
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
                         <h3>
-                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>70])?>">INVESTMENT ADVISORS</a>
+                            <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>70])?>">投资咨询</a>
                             <small>---------------------</small>
                         </h3>
                         <p>
@@ -152,7 +152,7 @@
                     <div class="headline style-2">	
 
                         <i class="miu-icon-other_conversation_review_comment_bubble_talk_outline_stroke"></i>
-                        <h2>Our key team members</h2>
+                        <h2>团队核心成员</h2>
 
                     </div><!-- headline -->
 
@@ -209,7 +209,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="headline style-3">
-                    <h2>Our Projects</h2>
+                    <h2>项目展示</h2>
                     
                     <?php 
                         $subtitle = Yii::$app->getTextBlock('home-our-projects');
