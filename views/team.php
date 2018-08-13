@@ -16,7 +16,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb">
                         <li><a href="<?= Yii::$app->urlManager->getHostInfo() . Yii::$app->homeUrl ?>"><?= Yii::t('app', 'Home') ?></a></li>
-                        <li class="active"><?= Yii::t('app', 'Contact') ?></li>
+                        <li class="active"><?= Yii::t('app', 'Our Team') ?></li>
                     </ol>
                 </div><!-- col -->
             </div><!-- row -->
