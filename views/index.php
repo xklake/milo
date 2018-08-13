@@ -21,7 +21,7 @@
 
                         <br>
 
-                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">CONTACT US NOW<i class="fa fa-arrow-right"></i></a></p>
+                        <p class="text-center"><a class="btn btn-default" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>60])?>">联系我们<i class="fa fa-arrow-right"></i></a></p>
 
                     </div><!-- col -->
                 </div><!-- row -->
@@ -52,7 +52,6 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="services-boxes style-2 wow fadeInDown">
-
                     <div class="services-boxes-content">
 
                         <h3>
@@ -72,14 +71,10 @@
                     </div><!-- services-boxes-content -->
 
                 </div><!-- services-boxes -->
-
             </div><!-- col -->
             <div class="col-sm-6">
-
                 <div class="services-boxes style-2 wow fadeInDown" data-wow-delay="0.3s">
-
                     <div class="services-boxes-content">
-
                         <h3>
                             <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/catalog', 'id'=>68])?>">物业投资</a>
                             <small>---------------------</small>
@@ -98,7 +93,6 @@
 
                 </div><!-- services-boxes -->
             </div><!-- col -->
-
             <div class="col-sm-6">
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
@@ -121,7 +115,6 @@
 
                 </div><!-- services-boxes -->                                                
             </div><!-- col -->
-            
             <div class="col-sm-6">
                 <div class="services-boxes style-2 wow wow fadeInDown" data-wow-delay="0.6s">
                     <div class="services-boxes-content">
@@ -174,7 +167,7 @@
                                     </a>       
                                     <br/>
                                     <div style="margin-bottom: 30px;">
-                                        <h5>Role & Certification</h5>
+                                        <h5>职位 & 资历</h5>
                                         <?=$item->keywords?>
                                     </div>    
                                     <?php /*
