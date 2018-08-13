@@ -10,8 +10,8 @@
                         </div><!-- logo -->
                     </div><!-- col -->
                     <div class="col-sm-8">
-                        <a class='search-button' href="http://cn.nerei.co.uk">
-                            <img src="/images/cn.png" style='vertical-align: middle;'/>
+                        <a class='search-button' href="http://nerei.co.uk">
+                            <img src="/images/en.png" style='vertical-align: middle;'/>
                         </a>                        
                         <!-- MENU --> 
                         <nav>
